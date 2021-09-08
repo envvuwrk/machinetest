@@ -1,0 +1,283 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>Blog</title>
+    <link rel="icon" href="" type="image/icon type">
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-softy-pinko.css' %}">
+
+    </head>
+
+    <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{% url 'sesame1:index' %}" class="active" style="color:#C5B358">Home</a></li>
+                            <li><a href="{% url 'sesame1:newpost' %}"  style="color:#C5B358">New Post</a></li>
+                            <li><a href="{% url 'sesame1:all' %}"  style="color:#C5B358">View All Posts</a></li>
+                           </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <style>
+            .welcome-area .header-text h1 {
+                      font-weight: 200;
+                      font-size: 55px;
+                      line-height: 54px;
+                      letter-spacing: 1.4px;
+                      margin-bottom: 20px;
+                      color: #C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger.active span:after {
+                      -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      background-color:#C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger.active span:before {
+                      -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      transform: translateY(6px) translateX(1px) rotate(45deg);
+                      background-color:#C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger span::before, .header-area .main-nav .menu-trigger span::after {
+                        transition: all 0.4s ease 0s;
+                        background-color:#C5B358;
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        left: 0px;
+                        width: 75%;
+}
+        </style>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome" style="background-color:black;">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-text">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <h1 style="color:#C5B358; position: left;"><strong><b><a href="{% url 'sesame1:newpost' %}" style="color:#C5B358;"> New Post</a></b></strong><br><strong></strong></h1>
+
+                </div>
+                     <div class="col-lg-6 col-md-12 col-sm-12 align-self-center mobile-top-fix">
+                    <h1 style="color:#C5B358; position: left;"><strong><b><a href="{% url 'sesame1:all' %}" style="color:#C5B358;">View All Post</a></b></strong><br><strong></strong></h1>
+
+                </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+
+    <!-- ***** Pricing Plans Start ***** -->
+    <section class="section colored" id="pricing-plans" >
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h2 class="section-title" style="color:black;">Our Services</h2>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p style="color:black;">Luxury Cars for Maximum Satisfaction.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.2s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <i><img src="{% static 'assets/images/airport.png' %}" alt="" height="60" width="60"></i>
+                            <h3 class="pricing-title" style="color:#C5B358">Airport Transfers</h3>
+                        <div>
+                        <p style="color:#C5B358">Insured, leather interior, air conditioning, rain sensor, panoramic roof</p>
+                        </div>
+                        </div>
+
+                        <!--<div class="pricing-body">-->
+                        <!--    <div class="price-wrapper">-->
+                        <!--        <span class="currency">$</span>-->
+                        <!--        <span class="price">260</span>-->
+                        <!--        <span class="period">Hourly</span>-->
+                        <!--    </div>-->
+                        <!--    <ul class="list">-->
+                        <!--        <li class="active">4 Seats</li>-->
+                        <!--        <li class="active">Diesel</li>-->
+                        <!--        <li class="active">Mechanic</li>-->
+<!--                                <li>15-minute support</li>-->
+<!--                                <li>Unlimited Emails</li>-->
+<!--                                <li>24/7 Security</li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                        <div class="pricing-footer">
+                            <a href="#contact-us" class="main-button">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.4s">
+                    <div class="pricing-item active">
+                        <div class="pricing-header">
+                           <i><img src="{% static 'assets/images/businesstransfer.png' %}" alt="" height="60" width="60"></i>
+                            <h3 class="pricing-title">Business Transfers</h3>
+                            <div>
+                        <p style="color:#C5B358">Insured, leather interior, air conditioning, rain sensor, panoramic roof</p>
+                        </div>
+                        </div>
+                        <!--<div class="pricing-body">-->
+                        <!--    <div class="price-wrapper">-->
+                        <!--        <span class="currency">$</span>-->
+                        <!--        <span class="price">190</span>-->
+                        <!--        <span class="period">Hourly</span>-->
+                        <!--    </div>-->
+                        <!--    <ul class="list">-->
+                        <!--        <li class="active">4 Seats</li>-->
+                        <!--        <li class="active">Petrol</li>-->
+                        <!--        <li class="active">Auto</li>-->
+<!--                                <li class="active">15-minute support</li>-->
+<!--                                <li>Unlimited Emails</li>-->
+<!--                                <li>24/7 Security</li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                        <div class="pricing-footer">
+                            <a href="#contact-us" class="main-button">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+
+                <!-- ***** Pricing Item Start ***** -->
+                <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter bottom move 50px over 0.6s after 0.6s">
+                    <div class="pricing-item">
+                        <div class="pricing-header">
+                            <i><img src="{% static 'assets/images/event.png' %}" alt="" height="60" width="60"></i>
+                            <h3 class="pricing-title">Events & Wedding</h3>
+                            <p style="color:#C5B358">Insured, leather interior, air conditioning, rain sensor, panoramic roof</p>
+
+                        </div>
+
+<!--                        <div class="pricing-body">-->
+<!--                            <div class="price-wrapper">-->
+<!--                                <span class="currency">$</span>-->
+<!--                                <span class="price">210</span>-->
+<!--                                <span class="period">Hourly</span>-->
+<!--                            </div>-->
+<!--                            <ul class="list">-->
+<!--                                <li class="active">5 Seats</li>-->
+<!--                                <li class="active">Petrol</li>-->
+<!--                                <li class="active">Auto</li>-->
+<!--                                <li class="active">15-minute support</li>-->
+<!--                                <li class="active">Unlimited Emails</li>-->
+<!--                                <li class="active">24/7 Security</li>-->
+                        <!--    </ul>-->
+                        <!--</div>-->
+                        <div class="pricing-footer">
+                            <a href="#contact-us" class="main-button">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- ***** Pricing Item End ***** -->
+            </div>
+        </div>
+    </section>
+
+
+    <!-- ***** Footer Start ***** -->
+    <footer style="background-color:black;">
+        <div class="container" style="background-color:black;">
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright" style="color:#C5B358">Copyright &copy; 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script>
+
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+  </body>
+</html>

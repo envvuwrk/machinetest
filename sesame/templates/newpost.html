@@ -1,0 +1,215 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
+    <title>Blog</title>
+    <link rel="icon" href="" type="image/icon type">
+<!--
+SOFTY PINKO
+https://templatemo.com/tm-535-softy-pinko
+-->
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/font-awesome.css' %}">
+
+    <link rel="stylesheet" href="{% static 'assets/css/templatemo-softy-pinko.css' %}">
+
+    </head>
+
+    <body>
+
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+    <!-- ***** Preloader End ***** -->
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky" >
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="{% url 'sesame1:index' %}"  style="color:#C5B358">Home</a></li>
+                            <li><a href="{% url 'sesame1:newpost' %}" class="active" style="color:#C5B358">New Post</a></li>
+                            <li><a href="{% url 'sesame1:all' %}"  style="color:#C5B358">View All Posts</a></li>
+                           </ul>
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <style>
+            .welcome-area .header-text h1 {
+                      font-weight: 200;
+                      font-size: 55px;
+                      line-height: 54px;
+                      letter-spacing: 1.4px;
+                      margin-bottom: 20px;
+                      color: #C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger.active span:after {
+                      -moz-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      -ms-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      -webkit-transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      transform: translateY(-6px) translateX(1px) rotate(-45deg);
+                      background-color:#C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger.active span:before {
+                      -moz-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      -ms-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      -webkit-transform: translateY(6px) translateX(1px) rotate(45deg);
+                      transform: translateY(6px) translateX(1px) rotate(45deg);
+                      background-color:#C5B358;
+}
+
+
+            .header-area .main-nav .menu-trigger span::before, .header-area .main-nav .menu-trigger span::after {
+                        transition: all 0.4s ease 0s;
+                        background-color:#C5B358;
+                        display: block;
+                        position: absolute;
+                        height: 2px;
+                        left: 0px;
+                        width: 75%;
+}
+        </style>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+
+
+
+<!-- ***** Contact Us Start ***** -->
+     <section class="section colored" id="contact-us" >
+        <div class="container">
+            <!-- ***** Section Title Start ***** -->
+            <div class="row">
+
+                <div class="col-lg-12">
+                    <div class="center-heading">
+                        <h1><b>New Post</b></h1>
+                    </div>
+                </div>
+                <div class="offset-lg-3 col-lg-6">
+                    <div class="center-text">
+                        <p style="color:black;"></p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Section Title End ***** -->
+
+            <div class="row">
+
+                <!-- ***** Contact Form Start ***** -->
+                <div class="col-lg-12 col-md-6 col-sm-12">
+                    <div class="contact-form">
+
+                        <form id="contact" action="" method="POST">
+                            {% csrf_token %}
+                          <div class="row">
+                            <div class="col-lg-12 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="name" type="text" class="form-control" id="name" placeholder="Heading" required="">
+                              </fieldset>
+                            </div>
+                              <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+<!--                                <input name="nmbr" type="text" class="form-control" id="nmbr" placeholder="Category" required="">-->
+<!--                             <label for="cars">Category</label>-->
+  <select id="cars" name="Category" class="form-control">
+    <option value="Category">Category</option>
+    <option value="Category1">Category1</option>
+    <option value="Category2">Category2</option>
+    <option value="Category3">Category3</option>
+  </select>
+
+                              </fieldset>
+                            </div>
+
+                            <div class="col-lg-6 col-md-12 col-sm-12">
+                              <fieldset>
+                                <input name="email" type="email" class="form-control" id="email" placeholder="Tags" >
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <textarea name="message" rows="6" class="form-control" id="message" placeholder="Content" ></textarea>
+                              </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                              <fieldset>
+                                <button type="submit" id="form-submit" class="main-button">Submit</button>
+                              </fieldset>
+                            </div>
+                          </div>
+                        </form>
+
+                    </div>
+                </div>
+                <!-- ***** Contact Form End ***** -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ***** Footer Start ***** -->
+    <footer style="background-color:black;">
+        <div class="container" style="background-color:black;">
+            <div class="row">
+
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright" style="color:#C5B358">Copyright &copy; 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="{% static 'assets/js/jquery-2.1.0.min.js' %}"></script>
+
+    <!-- Bootstrap -->
+    <script src="{% static 'assets/js/popper.js' %}"></script>
+    <script src="{% static 'assets/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugins -->
+    <script src="{% static 'assets/js/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'assets/js/waypoints.min.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'assets/js/imgfix.min.js' %}"></script>
+
+    <!-- Global Init -->
+    <script src="{% static 'assets/js/custom.js' %}"></script>
+
+  </body>
+</html>
